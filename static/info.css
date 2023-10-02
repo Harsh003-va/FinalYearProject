@@ -1,0 +1,30 @@
+  /* Neon colors */
+  :root {
+    --neon-primary-color: #212526;
+    --neon-secondary-color:#101210 ;
+  } 
+
+  /* Styling for sections */
+  section {
+    padding: 50px;
+    background-color: var(--neon-primary-color);
+    color: #fff;
+    transition: background-color 0.5s ease;
+  }
+
+  section:hover {
+    background-color: var(--neon-secondary-color);
+  }
+
+  /* Styling for navigation links */
+  nav ul li a {
+    color: var(--neon-primary-color);
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+
+  nav ul li a:hover {
+    color: var(--neon-secondary-color);
+  }
+
+  

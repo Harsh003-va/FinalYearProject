@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/about.css">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Allow the cards to wrap to a new row */
+    }
+
+    .row {
+      width: 100%; /* Set the width of the row to 100% */
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px; /* Add some margin between rows */
+    }
+
+    .card {
+      flex: 0 0 calc(33.33% - 10px); /* Set the width of each card to occupy 33.33% of the container width (minus margin) */
+      margin-right: 10px; /* Add some margin between cards */
+    }
+
+    ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+         
+       
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: rgb(245, 236, 236);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        .h1{
+          font-family:"Concert One";
+          
+        }
+  
+  </style>
+
+</head>
+<body bgcolor="black">
+
+
+  <CENTER><h1  class="   text-dark  h1" style="color: aliceblue;"><b>ABOUT US</b></h1></CENTER>
+  <ul>
+      <a href="#" class="navbar-brand">
+        <img src="/static/ecg.gif" width="80" height="40" alt="ecg">
+    </a>
+      <li style="float:right"><a class="active"  href="{{url_for('predict_image')}}">Predict</a></li>
+      <li style="float:right"><a href="{{url_for('about')}}">About</a></li>
+      <li style="float:right"><a href="{{url_for('info')}}">Info</a></li>  
+      <li style="float:right"><a href="{{url_for('predict_image')}}">Home</a></li>
+    
+    </ul>
+  
+<center>
+  <br>
+  <br>
+<div class="container" >
+
+ 
+
+
+  <div class="card" data-tilt>
+    <img src="/static/WhatsApp Image 2023-06-04 at 6.38.15 PM.jpeg" >
+    <h2>Yusuff Khan</h2>
+    <p>I'm student of PCCE Goa.</p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="https://twitter.com/neyan_khan?t=gl3ipBvM0Fmb7g0el7wOhg&s=08" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a  class="btn">MEMBER</a>
+  </div>
+
+  <div class="card" data-tilt>
+    <img src="/static/714ee137-e81e-4c97-9062-bdf97c0c3b98 (1).jpg (275×340)" >
+    <h2>Harsh Attigeri</h2>
+    <p>I'm student of PCCE Goa.</p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="http://twitter.com" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a class="btn">MEMBER</a>
+  </div>
+
+  <div class="card" data-tilt>
+    <img src="/static/WhatsApp Image 2023-06-04 at 7.48.27 PM.jpeg" >
+    <h2>Joshua Dias</h2>
+    <p>I'm student of PCCE Goa.</p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="http://twitter.com" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a  class="btn">MEMBER</a>
+  </div>
+
+  <div class="card" data-tilt>
+    <img src="/static/WhatsApp Image 2023-06-04 at 5.28.01 PM.jpeg" >
+    <h2>Shahezar Khan</h2>
+    <p>I'm student of PCCE Goa.</p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="http://twitter.com" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a  class="btn">MEMBER</a>
+  </div>
+
+  <div class="card" data-tilt>
+    <img src="/static/WhatsApp Image 2023-06-04 at 5.19.10 PM.jpeg" >
+    <h2>Sakshi Dessai</h2>
+    <p>I'm student of PCCE Goa.</p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="http://twitter.com" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a  class="btn">MEMBER</a>
+  </div>
+
+  <div class="card" data-tilt>
+    <img src="/static/photos/WhatsApp Image 2023-06-05 at 3.55.47 PM.jpeg" >
+    <h2>Blase Vaz</h2>
+    <p>I'm student of PCCE Goa.</p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="http://twitter.com" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a  class="btn">MEMBER</a>
+  </div>
+
+  <div class="card" data-tilt>
+    <img src="/static/35.shaba_-300x300.jpg" >
+    <h2>Shabha Dessai</h2>
+    <p>ASSISTANT PROFESSOR </p>
+    <div class="links">
+      <a href="http://facebook.com" ><img src="/static/facebook.png" ></a>
+      <a href="http://twitter.com" ><img src="/static/twitter.png" ></a>
+      <a href="http://telegram.com" ><img src="/static/telegram.png" ></a>
+    </div>
+    <a  class="btn">MENTOR</a>
+  </div>
+</div>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.js" integrity="sha512-Mfa0FGPN33LtU+puEaoEn1kAIFJYm2kMsipPbFefhcqz9lLVzxkN/NDFpaPUdmQuisESKXisMit5UkloQ8OtrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="tilt.jquery.js"></script>
+</body>
+</html>

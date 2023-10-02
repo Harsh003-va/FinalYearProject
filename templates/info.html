@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/info.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #171717);
+            color: white;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 2rem 9%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        .h1 {
+            font-family: "Concert One";
+        }
+
+        body {
+            background-color: black;
+        }
+
+        /* Animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 1s forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-in {
+            opacity: 0;
+            animation: slideInAnimation 1s forwards;
+        }
+
+        @keyframes slideInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<CENTER>
+    <h1 class="text-dark h1">
+        <b style="color: white;">Introduction</b>
+    </h1>
+</CENTER>
+<ul>
+    <a href="#" class="navbar-brand">
+        <img src="/static/ecg.gif" width="80" height="40" alt="ecg">
+    </a>
+    <li style="float:right"><a class="active" href="{{url_for('predict_image')}}">Predict</a></li>
+    <li style="float:right"><a href="{{url_for('about')}}">About</a></li>
+    <li style="float:right"><a href="{{url_for('info')}}">Info</a></li>
+    <li style="float:right"><a href="{{url_for('predict_image')}}">Home</a></li>
+</ul>
+
+<center>
+
+
+<section id="section1" class="fade-in">
+    <h2></h2>
+    <h4>
+        <p>
+            <b>
+                This is a Deep Learning Project which helps in predicting whether a person is suffering from Cardiac
+                Arrhythmia or Not plus telling which type of Cardiac Arrhythmia can this be.
+            </b>
+        </p>
+    </h4>
+    <h2 style="display: flex; text-decoration: underline;">
+        <label for="section1">objective</label>
+    </h2>
+    <div
+        style="border: 1px none black; width: 70%; height: 350px; margin-top: 10px;  float: left;"
+        class="slide-in"
+    >
+        <h4 style="display: flex; text-align: start; ">
+            <p>
+                Cardiac Arrhythmia is a group of conditions in which the electrical activity of the heart is irregular
+                or is faster or slower than normal. It is the leading cause of death for both men and women in the world.
+                In this project, we plan to predict Cardiac Arrhythmia based on a patient’s medical record. Our objective
+                is to classify a patient into one of the Arrhythmia classes like Tachycardia and Bradycardia based on his
+                ECG measurements and help us in understanding the application of machine learning in the medical domain.
+                After appropriate feature selection, we plan to solve this problem by using Machine Learning Algorithms
+                namely 2D CNN.
+                The diagnosis of cardiac arrhythmia can be classified into various classes based on the Electrocardiogram
+                (ECG) readings and other attributes. The first class will refer to the normal patient while other classes
+                shall represent different classes of cardiac arrhythmia like Tachycardia, Bradycardia, and Coronary artery
+                diseases.
+            </p>
+        </h4>
+    </div>
+</section>
+
+<section class="info" id="info" class="fade-in">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> Workflow <span>Diagram</span></h2>
+
+    <div class="row">
+
+        <div>
+            <div
+                style="border: 1px solid black; width: 17%; height: 600px; float: left;  background-size: contain; scroll-behavior: smooth;"
+                class="slide-in"
+            > <img src="/static/photos/Picture1.png" alt="" srcset="" height="600px" width="400px"></div>
+            <div
+                style="border: 1px none black; width: 70%; height: 350px; margin-top: 10px; margin-left: 450px;"
+                class="slide-in"
+            >
+                <p style="text-align: start;">
+                    P wave-The P wave represents atrial depolarization PR interval-The PR interval is estimated from the
+                    earliest starting point of the P wave to the start of the QRS complex. QRS Complex-The QRS complex
+                    represents ventricular depolarization. J-point-The J-point is where The QRS complex completes and the
+                    ST portion starts. It represents the period when the ventricles are depolarized. ST Segments-It
+                    represents the period when the ventricles are depolarized. T wave- The T wave represents ventricular
+                    repolarization
+                </p>
+                <img src="/static/photos/piture2.png" width="200px" height="200px">
+                <br>
+                <br>
+                <div class="Research">
+                    <a href="https://docs.google.com/document/d/1NcYVweFNu5qlu6nubTXI4RLyHSehsH61/edit?usp=drive_link&ouid=116490908659692225014&rtpof=true&sd=true"
+                        target="_blank" class="btn btn-primary"
+                    ><span>Research Paper</span>
+                        <i class='fa fa-chevron-right'></i>
+                    </a>
+                </div>
+            </div>
+
+            
+          
+          
+          
+          
+        </div>
+      </div>
+      </div>
+  </section>
+  
+    <section id="section3">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/photos/2d cnn 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/photos/2d cnn2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/photos/2d cnn 3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+   
+</body>
+</html>
+
+
