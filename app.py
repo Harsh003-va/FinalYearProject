@@ -7,7 +7,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 // add your model.h5 file below and then run the code
-model_path = 'C:/Users/harsh/OneDrive/Desktop/Flask 2023/Arrythmia detection.h5'
+model_path = 'C:/Users/lask 2023/Arrythmia detection.h5'
 model = load_model(model_path)
 
 @app.route('/')
